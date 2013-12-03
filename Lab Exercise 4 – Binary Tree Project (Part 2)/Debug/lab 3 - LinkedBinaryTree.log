@@ -1,0 +1,29 @@
+﻿Build started 03/12/2013 20:50:07.
+     1>Project "C:\Users\Conor Harney\Desktop\Year 3\DSAA\Lab Exercise 4 – Binary Tree Project (Part 2)\lab 3 - LinkedBinaryTree.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt BinaryTreeTest.cpp
+         BinaryTreeTest.cpp
+     1>c:\users\conor harney\desktop\year 3\dsaa\lab exercise 4 – binary tree project (part 2)\binarytreeiterator.h(16): warning C4172: returning address of local variable or temporary
+                 c:\users\conor harney\desktop\year 3\dsaa\lab exercise 4 – binary tree project (part 2)\binarytreeiterator.h(14) : while compiling class template member function 'int &BinaryTreeIterator<T>::operator *(void)'
+                 with
+                 [
+                     T=int
+                 ]
+                 c:\users\conor harney\desktop\year 3\dsaa\lab exercise 4 – binary tree project (part 2)\linkedbinarytree.h(93) : see reference to function template instantiation 'int &BinaryTreeIterator<T>::operator *(void)' being compiled
+                 with
+                 [
+                     T=int
+                 ]
+                 c:\users\conor harney\desktop\year 3\dsaa\lab exercise 4 – binary tree project (part 2)\binarytreetest.cpp(20) : see reference to class template instantiation 'BinaryTreeIterator<T>' being compiled
+                 with
+                 [
+                     T=int
+                 ]
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Conor Harney\Desktop\Year 3\DSAA\Lab Exercise 4 – Binary Tree Project (Part 2)\Debug\Lab Exercise 4 – Binary Tree Project (Part 2).exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Conor Harney\Desktop\Year 3\DSAA\Lab Exercise 4 – Binary Tree Project (Part 2)\Debug\Lab Exercise 4 – Binary Tree Project (Part 2).pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Conor Harney\Desktop\Year 3\DSAA\Lab Exercise 4 – Binary Tree Project (Part 2)\Debug\Lab Exercise 4 – Binary Tree Project (Part 2).lib" /MACHINE:X86 Debug\BinaryTreeTest.obj
+         lab 3 - LinkedBinaryTree.vcxproj -> C:\Users\Conor Harney\Desktop\Year 3\DSAA\Lab Exercise 4 – Binary Tree Project (Part 2)\Debug\Lab Exercise 4 – Binary Tree Project (Part 2).exe
+     1>Done Building Project "C:\Users\Conor Harney\Desktop\Year 3\DSAA\Lab Exercise 4 – Binary Tree Project (Part 2)\lab 3 - LinkedBinaryTree.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.05
