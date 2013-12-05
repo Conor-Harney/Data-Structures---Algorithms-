@@ -247,11 +247,15 @@ int LinkedBinaryTree<T, Iterator>::getHeight(Iterator n) const{
 			return greater(x,y) + 1
 		}
 		return 0*/
-	if (n.node()->leftChild() != 0 && n.node()->rightChild() != 0){
-		int x = getHeight(n.node()->leftChild());
-		int y = getHeight(n.node()->rightChild());
-		if(x > y){return x + 1;}
-		else{return y + 1;}
+	if (n.node()->leftChild() != 0 || n.node()->rightChild() != 0){
+		if(n.node()->leftChild() == 0){int y = getHeight(n.node()->rightChild()); return y + 1;}
+		else if(n.node()->rightChild() == 0){int x = getHeight(n.node()->leftChild()); return x + 1;}
+		else{
+			int x = getHeight(n.node()->leftChild());
+			int y = getHeight(n.node()->rightChild());
+			if(x > y){return x + 1;}
+			else{return y + 1;}
+		}
 	}
 	return 0;
 }

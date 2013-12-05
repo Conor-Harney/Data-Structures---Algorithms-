@@ -27,6 +27,7 @@ int main() {
 	binaryPreorder(iter2);
 
 	system("PAUSE");
+	iter2 = myTree.root();
 	nonRecursiveBinaryPreorder(iter2);
 	system("PAUSE");
 	iter2 = myTree.root();
@@ -103,6 +104,15 @@ void binaryPreorder( Iterator position){
 
 template <typename Iterator>
 void binaryPreorder( Iterator position){
+	/*Algorithm binaryPreorder(bt, n):
+	    perform the "visit" action for node n
+	    if n is an internal node {
+		   {recursively traverse left subtree}
+		   binaryPreorder(bt,bt.leftChild(n))	
+		   {recursively traverse right subtree}
+		   binaryPreorder(bt,bt.rightChild(n))	
+      }
+*/
 	if(position.node() != 0){
 		cout << position.node()->element() << endl;
 	}
@@ -138,7 +148,7 @@ while the stack is not empty OR the current node is not NULL {
 	while(stack1.empty() == false || currentNode != 0){
 		while(currentNode != 0){
 			stack1.push(currentNode);
-			currentNode = currentNode.node()->leftChild().node();
+			currentNode = currentNode.node()->leftChild();
 		}
 		if(currentNode == 0){
 			currentNode = stack1.top();
